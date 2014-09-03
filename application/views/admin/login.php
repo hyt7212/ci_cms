@@ -9,19 +9,18 @@
     <meta name="author" content="">
 
     <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url().'application/views/admin/resource/'; ?>lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo base_url().'application/views/admin/resource/'; ?>lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>data/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>data/lib/font-awesome/css/font-awesome.css">
 
-    <script src="<?php echo base_url().'application/views/admin/resource/'; ?>lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>data/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
 
-    
 
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url().'application/views/admin/resource/'; ?>stylesheets/theme.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url().'application/views/admin/resource/'; ?>stylesheets/premium.css">
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>data/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>data/css/premium.css">
 
 </head>
 <body class=" theme-blue">
-
     <script type="text/javascript">
         $(function() {
             var match = document.cookie.match(new RegExp('color=([^;]+)'));
@@ -34,7 +33,7 @@
             }
 
             $('[data-popover="true"]').popover({html: true});
-            
+
         });
     </script>
     <style type="text/css">
@@ -44,7 +43,7 @@
             margin: 0px auto;
             margin-top: 1em;
         }
-        .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover { 
+        .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
             color: #fff;
         }
     </style>
@@ -68,14 +67,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-  
+
 
   <!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
   <!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
   <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
   <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
-  <!--[if (gt IE 9)|!(IE)]><!--> 
-   
+  <!--[if (gt IE 9)|!(IE)]><!-->
+
   <!--<![endif]-->
 
     <div class="navbar navbar-default" role="navigation">
@@ -87,7 +86,7 @@
         </div>
       </div>
     </div>
-    
+
 
 
         <div class="dialog">
@@ -106,7 +105,7 @@
                     <?php echo '<font style="color:red;">'.form_error('password').'</font>'; ?>
                 </div>
                 <?php echo form_input(array('name'=>'submit', 'type'=>'submit', 'value'=>'登录', 'class'=>'btn btn-primary pull-right')); ?>
-    
+
                 <label class="remember-me">
                     <?php echo form_input(array('name'=>'rememberme', 'type'=>'checkbox', 'value'=>1, 'class'=>'remember', 'checked'=>'checked')); ?> 记住我
                 </label>
@@ -120,13 +119,13 @@
 
 
 
-    <script src="<?php echo base_url().'application/views/admin/resource/'; ?>lib/bootstrap/js/bootstrap.js"></script>
+    <script src="<?php echo base_url(); ?>data/lib/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
         $("[rel=tooltip]").tooltip();
         $(function() {
             $('.demo-cancel-click').click(function(){return false;});
         });
     </script>
-    
-  
+
+
 </body></html>
