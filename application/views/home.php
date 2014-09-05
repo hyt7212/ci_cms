@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>前台</title>
 </head>
 <body>
 	前台home控制器index<br>

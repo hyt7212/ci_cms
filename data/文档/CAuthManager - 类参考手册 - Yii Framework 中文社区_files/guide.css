@@ -1,0 +1,206 @@
+.content .toc
+{
+	font-size: 9pt;
+}
+
+ul.toc, ul.toc ul, ul.toc li, ul.toc li li
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.toc li
+{
+	padding: 2px 0 2px 2px;
+	margin: 0 0 0 10px;
+}
+
+ul.toc li li
+{
+	padding: 2px 0 2px 20px;
+	margin: 0 0 0 -10px;
+}
+
+ul.toc li.active
+{
+	background: #D3DFEE;
+	margin: 0 -5px 0 -20px;
+	padding: 2px 5px 2px 20px;
+}
+
+pre
+{
+	display: block;
+	padding: 1em;
+	background:#fcfcfc;
+	border-top: 1px  solid #eee;
+	border-bottom: 1px  solid #eee;
+	margin: 1em 0;
+}
+
+code
+{
+	border-bottom: 1px dotted #ccc;
+	font-weight: bold;
+	color: #666;
+}
+
+div.revision
+{
+	font-size: 0.8em;
+	color: #999;
+	margin-top: 5em;
+}
+
+blockquote.tip, blockquote.info, blockquote.note
+{
+	border-top:1px solid #0cf;
+	border-bottom:1px solid #0cf;
+	padding:0em 1em 0em 55px;
+	margin: 1em 0em;
+	border-color: #E4DFB8;
+	background-color: #FFFAE6;
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-image: url(../images/tip.gif);
+}
+
+blockquote.note
+{
+	background-color:#FFE6E6;
+	border-color:#D9C3C3;
+	background-image: url(../images/note.gif);
+}
+
+blockquote.info
+{
+	border-color: #B4DAA5;
+	background-color: #EBFFCE;
+	background-image: url(../images/info.gif);
+}
+
+span.type
+{
+	float: left;
+	padding-right: 0.5em;
+	font-weight: bold;
+}
+
+div.searchResult
+{
+	color: green;
+}
+
+div.searchError
+{
+	color: red;
+}
+
+div.searchItem
+{
+}
+
+span.searchMatch
+{
+	background: green;
+}
+
+div.guideNavigator
+{
+	margin: 10px 0 3em 0;
+	padding-top: 0.5em;
+	border-top: 1px solid silver;
+	font-weight: bold;
+	color: #999;
+}
+
+div.guidePrevTopic
+{
+	float: left;
+}
+
+div.guideNextTopic
+{
+	float: right;
+}
+
+/*
+#comments, #add-comment
+{
+	border-bottom: 1px solid #ccc;
+	padding: 0.4em 0.2em;
+	color: #555;
+}
+#add-comment
+{
+	margin-top: 1em;
+	padding-bottom: 0;
+	margin-bottom: 0.2em;
+	border-bottom: 0 none;
+}
+*/
+div.yiiForm div.simple,
+div.yiiForm div.complex
+{
+	clear: none;
+}
+
+div.image
+{
+	-moz-border-radius:7px;
+	margin: 10px 0;
+	border: 3px solid #EEE;
+	text-align: center;
+}
+
+div.image > p
+{
+	background: #EEE;
+	margin: 0;
+	font-weight: bold;
+}
+
+#main h1, #main h2, #main h3, #main h4
+{
+	margin-top: 1em;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+
+#main .search
+{
+/*	margin-bottom: -2em;*/
+}
+
+.languages
+{
+	margin: 10px 0 10px;
+}
+
+.languages img
+{
+	border: 0;
+	margin: 0 5px 0px 5px;
+	padding: 5px 0 2px 0;
+	border-bottom: 2px solid white;
+}
+
+.languages img.active
+{
+	border-bottom: 2px solid #09F;
+}
+
+.languages a:hover img
+{
+	border-bottom: 2px solid #09F;
+}
+
+.memo
+{
+	margin: 10px 0;
+	padding: 10px;
+	background: lightyellow;
+}

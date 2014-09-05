@@ -1,0 +1,1381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://www.yiichina.com/api/CAuthManager -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="language" content="zh-CN">
+<meta name="keywords" content="Yii Framewok,中文社区,文档手册,视频教程,扩展下载">
+<meta name="description" content="Yii Framework是一个基于组件、用于开发大型Web应用的高性能PHP框架。">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.yiichina.com/favicon.ico">
+<!-- blueprint CSS framework -->
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/screen.css" media="screen, projection">
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/print.css" media="print">
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/main.css">
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/form.css">
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/guide.css">
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/api.css">
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery.treeview.css">
+<link rel="stylesheet" type="text/css" href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery-ui.css">
+<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery.min.js"></script>
+<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery.cookie.js"></script>
+<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery.treeview.js"></script>
+<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery.treeview.edit.js"></script>
+<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery.treeview.async.js"></script>
+<title>CAuthManager - 类参考手册 - Yii Framework 中文社区</title>
+<meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;jQuery&quot;:&quot;1.7.1&quot;,&quot;jQuery UI&quot;:&quot;1.8.16&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+
+<body>
+
+<div class="container">
+	<div id="header">
+		<div id="logo"><a href="http://www.yiichina.com/"><img src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/logo.gif" alt="Yii PHP Framework"></a></div>
+		<div class="right">
+			<div id="umenu">
+									<a href="http://www.yiichina.com/forum/register.php">注册</a>					<a href="http://www.yiichina.com/login/">登录</a>							</div>
+			<div id="search">
+				<form action="http://www.yiichina.com/site/search/" method="post">                <input type="text" value="" name="q" id="q">				<input type="submit" value=" 搜索 ">
+				</form>			</div>
+		</div>
+	</div><!-- header -->
+	<div id="mainmenu">
+		<ul id="yw1">
+<li><a href="http://www.yiichina.com/">首 页</a></li>
+<li><a href="http://www.yiichina.com/about/">关 于</a></li>
+<li><a href="http://www.yiichina.com/demos/">示 例</a></li>
+<li><a href="http://www.yiichina.com/download/">下 载</a></li>
+<li><a href="http://www.yiichina.com/video/">视 频</a></li>
+<li><a href="http://www.yiichina.com/cookbook/">教 程</a></li>
+<li><a href="http://www.yiichina.com/extension/">扩 展</a></li>
+<li><a href="http://www.yiichina.com/doc/">文 档</a></li>
+<li class="active"><a href="http://www.yiichina.com/api/">手 册</a></li>
+<li><a href="http://www.yiichina.com/project/">案 例</a></li>
+<li><a href="http://www.yiichina.com/code/">源 码</a><img src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/new.gif"></li>
+<li><a href="http://www.yiichina.com/forum/">论 坛</a><img src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/hot.gif"></li>
+<li><a href="http://www.yiichina.net/">官 网</a></li>
+<li><a href="https://github.com/yiisoft/yii">开 发</a></li>
+</ul>	</div><!-- mainmenu -->
+			<div class="breadcrumbs">
+<a href="http://www.yiichina.com/">Yii Framework 中文社区</a> » <span>Yii Framework 类参考中文版</span></div><!-- breadcrumbs -->
+			<div id="page">
+		<div class="clearfix">
+	<div id="sidebar" class="left" style="border-right: #ccc solid 1px;">
+		<ul class="filetree treeview" id="yw0" style="">
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/Yii">Yii</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/YiiBase">YiiBase</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.base</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CApplication">CApplication</a></li>
+<li><a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a></li>
+<li><a href="http://www.yiichina.com/api/CBehavior">CBehavior</a></li>
+<li><a href="http://www.yiichina.com/api/CComponent">CComponent</a></li>
+<li><a href="http://www.yiichina.com/api/CEnumerable">CEnumerable</a></li>
+<li><a href="http://www.yiichina.com/api/CErrorEvent">CErrorEvent</a></li>
+<li><a href="http://www.yiichina.com/api/CErrorHandler">CErrorHandler</a></li>
+<li><a href="http://www.yiichina.com/api/CEvent">CEvent</a></li>
+<li><a href="http://www.yiichina.com/api/CException">CException</a></li>
+<li><a href="http://www.yiichina.com/api/CExceptionEvent">CExceptionEvent</a></li>
+<li><a href="http://www.yiichina.com/api/CHttpException">CHttpException</a></li>
+<li><a href="http://www.yiichina.com/api/CModel">CModel</a></li>
+<li><a href="http://www.yiichina.com/api/CModelBehavior">CModelBehavior</a></li>
+<li><a href="http://www.yiichina.com/api/CModelEvent">CModelEvent</a></li>
+<li><a href="http://www.yiichina.com/api/CModule">CModule</a></li>
+<li><a href="http://www.yiichina.com/api/CSecurityManager">CSecurityManager</a></li>
+<li><a href="http://www.yiichina.com/api/CStatePersister">CStatePersister</a></li>
+<li><a href="http://www.yiichina.com/api/IAction">IAction</a></li>
+<li><a href="http://www.yiichina.com/api/IApplicationComponent">IApplicationComponent</a></li>
+<li><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></li>
+<li><a href="http://www.yiichina.com/api/IBehavior">IBehavior</a></li>
+<li><a href="http://www.yiichina.com/api/IFilter">IFilter</a></li>
+<li><a href="http://www.yiichina.com/api/IStatePersister">IStatePersister</a></li>
+<li><a href="http://www.yiichina.com/api/IUserIdentity">IUserIdentity</a></li>
+<li><a href="http://www.yiichina.com/api/IViewRenderer">IViewRenderer</a></li>
+<li><a href="http://www.yiichina.com/api/IWebServiceProvider">IWebServiceProvider</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/IWebUser">IWebUser</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.caching</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CApcCache">CApcCache</a></li>
+<li><a href="http://www.yiichina.com/api/CCache">CCache</a></li>
+<li><a href="http://www.yiichina.com/api/CDbCache">CDbCache</a></li>
+<li><a href="http://www.yiichina.com/api/CDummyCache">CDummyCache</a></li>
+<li><a href="http://www.yiichina.com/api/CEAcceleratorCache">CEAcceleratorCache</a></li>
+<li><a href="http://www.yiichina.com/api/CFileCache">CFileCache</a></li>
+<li><a href="http://www.yiichina.com/api/CMemCache">CMemCache</a></li>
+<li><a href="http://www.yiichina.com/api/CMemCacheServerConfiguration">CMemCacheServerConfiguration</a></li>
+<li><a href="http://www.yiichina.com/api/CWinCache">CWinCache</a></li>
+<li><a href="http://www.yiichina.com/api/CXCache">CXCache</a></li>
+<li><a href="http://www.yiichina.com/api/CZendDataCache">CZendDataCache</a></li>
+<li><a href="http://www.yiichina.com/api/ICache">ICache</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/ICacheDependency">ICacheDependency</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.caching.dependencies</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CCacheDependency">CCacheDependency</a></li>
+<li><a href="http://www.yiichina.com/api/CChainedCacheDependency">CChainedCacheDependency</a></li>
+<li><a href="http://www.yiichina.com/api/CDbCacheDependency">CDbCacheDependency</a></li>
+<li><a href="http://www.yiichina.com/api/CDirectoryCacheDependency">CDirectoryCacheDependency</a></li>
+<li><a href="http://www.yiichina.com/api/CExpressionDependency">CExpressionDependency</a></li>
+<li><a href="http://www.yiichina.com/api/CFileCacheDependency">CFileCacheDependency</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CGlobalStateCacheDependency">CGlobalStateCacheDependency</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.collections</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CAttributeCollection">CAttributeCollection</a></li>
+<li><a href="http://www.yiichina.com/api/CConfiguration">CConfiguration</a></li>
+<li><a href="http://www.yiichina.com/api/CList">CList</a></li>
+<li><a href="http://www.yiichina.com/api/CListIterator">CListIterator</a></li>
+<li><a href="http://www.yiichina.com/api/CMap">CMap</a></li>
+<li><a href="http://www.yiichina.com/api/CMapIterator">CMapIterator</a></li>
+<li><a href="http://www.yiichina.com/api/CQueue">CQueue</a></li>
+<li><a href="http://www.yiichina.com/api/CQueueIterator">CQueueIterator</a></li>
+<li><a href="http://www.yiichina.com/api/CStack">CStack</a></li>
+<li><a href="http://www.yiichina.com/api/CStackIterator">CStackIterator</a></li>
+<li><a href="http://www.yiichina.com/api/CTypedList">CTypedList</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CTypedMap">CTypedMap</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.console</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CConsoleApplication">CConsoleApplication</a></li>
+<li><a href="http://www.yiichina.com/api/CConsoleCommand">CConsoleCommand</a></li>
+<li><a href="http://www.yiichina.com/api/CConsoleCommandRunner">CConsoleCommandRunner</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CHelpCommand">CHelpCommand</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CDbCommand">CDbCommand</a></li>
+<li><a href="http://www.yiichina.com/api/CDbConnection">CDbConnection</a></li>
+<li><a href="http://www.yiichina.com/api/CDbDataReader">CDbDataReader</a></li>
+<li><a href="http://www.yiichina.com/api/CDbException">CDbException</a></li>
+<li><a href="http://www.yiichina.com/api/CDbMigration">CDbMigration</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CDbTransaction">CDbTransaction</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.ar</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CActiveFinder">CActiveFinder</a></li>
+<li><a href="http://www.yiichina.com/api/CActiveRecord">CActiveRecord</a></li>
+<li><a href="http://www.yiichina.com/api/CActiveRecordBehavior">CActiveRecordBehavior</a></li>
+<li><a href="http://www.yiichina.com/api/CActiveRecordMetaData">CActiveRecordMetaData</a></li>
+<li><a href="http://www.yiichina.com/api/CActiveRelation">CActiveRelation</a></li>
+<li><a href="http://www.yiichina.com/api/CBaseActiveRelation">CBaseActiveRelation</a></li>
+<li><a href="http://www.yiichina.com/api/CBelongsToRelation">CBelongsToRelation</a></li>
+<li><a href="http://www.yiichina.com/api/CHasManyRelation">CHasManyRelation</a></li>
+<li><a href="http://www.yiichina.com/api/CHasOneRelation">CHasOneRelation</a></li>
+<li><a href="http://www.yiichina.com/api/CJoinElement">CJoinElement</a></li>
+<li><a href="http://www.yiichina.com/api/CJoinQuery">CJoinQuery</a></li>
+<li><a href="http://www.yiichina.com/api/CManyManyRelation">CManyManyRelation</a></li>
+<li><a href="http://www.yiichina.com/api/CStatElement">CStatElement</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CStatRelation">CStatRelation</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.schema</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CDbColumnSchema">CDbColumnSchema</a></li>
+<li><a href="http://www.yiichina.com/api/CDbCommandBuilder">CDbCommandBuilder</a></li>
+<li><a href="http://www.yiichina.com/api/CDbCriteria">CDbCriteria</a></li>
+<li><a href="http://www.yiichina.com/api/CDbExpression">CDbExpression</a></li>
+<li><a href="http://www.yiichina.com/api/CDbSchema">CDbSchema</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CDbTableSchema">CDbTableSchema</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.schema.mssql</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CMssqlColumnSchema">CMssqlColumnSchema</a></li>
+<li><a href="http://www.yiichina.com/api/CMssqlCommandBuilder">CMssqlCommandBuilder</a></li>
+<li><a href="http://www.yiichina.com/api/CMssqlPdoAdapter">CMssqlPdoAdapter</a></li>
+<li><a href="http://www.yiichina.com/api/CMssqlSchema">CMssqlSchema</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CMssqlTableSchema">CMssqlTableSchema</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.schema.mysql</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CMysqlColumnSchema">CMysqlColumnSchema</a></li>
+<li><a href="http://www.yiichina.com/api/CMysqlSchema">CMysqlSchema</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CMysqlTableSchema">CMysqlTableSchema</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.schema.oci</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/COciColumnSchema">COciColumnSchema</a></li>
+<li><a href="http://www.yiichina.com/api/COciCommandBuilder">COciCommandBuilder</a></li>
+<li><a href="http://www.yiichina.com/api/COciSchema">COciSchema</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/COciTableSchema">COciTableSchema</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.schema.pgsql</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CPgsqlColumnSchema">CPgsqlColumnSchema</a></li>
+<li><a href="http://www.yiichina.com/api/CPgsqlSchema">CPgsqlSchema</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CPgsqlTableSchema">CPgsqlTableSchema</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.db.schema.sqlite</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CSqliteColumnSchema">CSqliteColumnSchema</a></li>
+<li><a href="http://www.yiichina.com/api/CSqliteCommandBuilder">CSqliteCommandBuilder</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CSqliteSchema">CSqliteSchema</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.gii</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CCodeFile">CCodeFile</a></li>
+<li><a href="http://www.yiichina.com/api/CCodeForm">CCodeForm</a></li>
+<li><a href="http://www.yiichina.com/api/CCodeGenerator">CCodeGenerator</a></li>
+<li><a href="http://www.yiichina.com/api/CCodeModel">CCodeModel</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/GiiModule">GiiModule</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.i18n</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CChoiceFormat">CChoiceFormat</a></li>
+<li><a href="http://www.yiichina.com/api/CDateFormatter">CDateFormatter</a></li>
+<li><a href="http://www.yiichina.com/api/CDbMessageSource">CDbMessageSource</a></li>
+<li><a href="http://www.yiichina.com/api/CGettextMessageSource">CGettextMessageSource</a></li>
+<li><a href="http://www.yiichina.com/api/CLocale">CLocale</a></li>
+<li><a href="http://www.yiichina.com/api/CMessageSource">CMessageSource</a></li>
+<li><a href="http://www.yiichina.com/api/CMissingTranslationEvent">CMissingTranslationEvent</a></li>
+<li><a href="http://www.yiichina.com/api/CNumberFormatter">CNumberFormatter</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CPhpMessageSource">CPhpMessageSource</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.i18n.gettext</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CGettextFile">CGettextFile</a></li>
+<li><a href="http://www.yiichina.com/api/CGettextMoFile">CGettextMoFile</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CGettextPoFile">CGettextPoFile</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.logging</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CDbLogRoute">CDbLogRoute</a></li>
+<li><a href="http://www.yiichina.com/api/CEmailLogRoute">CEmailLogRoute</a></li>
+<li><a href="http://www.yiichina.com/api/CFileLogRoute">CFileLogRoute</a></li>
+<li><a href="http://www.yiichina.com/api/CLogFilter">CLogFilter</a></li>
+<li><a href="http://www.yiichina.com/api/CLogRoute">CLogRoute</a></li>
+<li><a href="http://www.yiichina.com/api/CLogRouter">CLogRouter</a></li>
+<li><a href="http://www.yiichina.com/api/CLogger">CLogger</a></li>
+<li><a href="http://www.yiichina.com/api/CProfileLogRoute">CProfileLogRoute</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CWebLogRoute">CWebLogRoute</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.test</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CDbFixtureManager">CDbFixtureManager</a></li>
+<li><a href="http://www.yiichina.com/api/CDbTestCase">CDbTestCase</a></li>
+<li><a href="http://www.yiichina.com/api/CTestCase">CTestCase</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CWebTestCase">CWebTestCase</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.utils</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CDateTimeParser">CDateTimeParser</a></li>
+<li><a href="http://www.yiichina.com/api/CFileHelper">CFileHelper</a></li>
+<li><a href="http://www.yiichina.com/api/CFormatter">CFormatter</a></li>
+<li><a href="http://www.yiichina.com/api/CMarkdownParser">CMarkdownParser</a></li>
+<li><a href="http://www.yiichina.com/api/CPropertyValue">CPropertyValue</a></li>
+<li><a href="http://www.yiichina.com/api/CTimestamp">CTimestamp</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CVarDumper">CVarDumper</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.validators</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CBooleanValidator">CBooleanValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CCaptchaValidator">CCaptchaValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CCompareValidator">CCompareValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CDateValidator">CDateValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CDefaultValueValidator">CDefaultValueValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CEmailValidator">CEmailValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CExistValidator">CExistValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CFileValidator">CFileValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CFilterValidator">CFilterValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CInlineValidator">CInlineValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CNumberValidator">CNumberValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CRangeValidator">CRangeValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CRegularExpressionValidator">CRegularExpressionValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CRequiredValidator">CRequiredValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CSafeValidator">CSafeValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CStringValidator">CStringValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CTypeValidator">CTypeValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CUniqueValidator">CUniqueValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CUnsafeValidator">CUnsafeValidator</a></li>
+<li><a href="http://www.yiichina.com/api/CUrlValidator">CUrlValidator</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CValidator">CValidator</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CActiveDataProvider">CActiveDataProvider</a></li>
+<li><a href="http://www.yiichina.com/api/CArrayDataProvider">CArrayDataProvider</a></li>
+<li><a href="http://www.yiichina.com/api/CAssetManager">CAssetManager</a></li>
+<li><a href="http://www.yiichina.com/api/CBaseController">CBaseController</a></li>
+<li><a href="http://www.yiichina.com/api/CBaseUrlRule">CBaseUrlRule</a></li>
+<li><a href="http://www.yiichina.com/api/CCacheHttpSession">CCacheHttpSession</a></li>
+<li><a href="http://www.yiichina.com/api/CClientScript">CClientScript</a></li>
+<li><a href="http://www.yiichina.com/api/CController">CController</a></li>
+<li><a href="http://www.yiichina.com/api/CCookieCollection">CCookieCollection</a></li>
+<li><a href="http://www.yiichina.com/api/CDataProvider">CDataProvider</a></li>
+<li><a href="http://www.yiichina.com/api/CDbHttpSession">CDbHttpSession</a></li>
+<li><a href="http://www.yiichina.com/api/CExtController">CExtController</a></li>
+<li><a href="http://www.yiichina.com/api/CFormModel">CFormModel</a></li>
+<li><a href="http://www.yiichina.com/api/CHttpCookie">CHttpCookie</a></li>
+<li><a href="http://www.yiichina.com/api/CHttpRequest">CHttpRequest</a></li>
+<li><a href="http://www.yiichina.com/api/CHttpSession">CHttpSession</a></li>
+<li><a href="http://www.yiichina.com/api/CHttpSessionIterator">CHttpSessionIterator</a></li>
+<li><a href="http://www.yiichina.com/api/COutputEvent">COutputEvent</a></li>
+<li><a href="http://www.yiichina.com/api/CPagination">CPagination</a></li>
+<li><a href="http://www.yiichina.com/api/CSort">CSort</a></li>
+<li><a href="http://www.yiichina.com/api/CSqlDataProvider">CSqlDataProvider</a></li>
+<li><a href="http://www.yiichina.com/api/CTheme">CTheme</a></li>
+<li><a href="http://www.yiichina.com/api/CThemeManager">CThemeManager</a></li>
+<li><a href="http://www.yiichina.com/api/CUploadedFile">CUploadedFile</a></li>
+<li><a href="http://www.yiichina.com/api/CUrlManager">CUrlManager</a></li>
+<li><a href="http://www.yiichina.com/api/CUrlRule">CUrlRule</a></li>
+<li><a href="http://www.yiichina.com/api/CWebApplication">CWebApplication</a></li>
+<li><a href="http://www.yiichina.com/api/CWebModule">CWebModule</a></li>
+<li><a href="http://www.yiichina.com/api/CWidgetFactory">CWidgetFactory</a></li>
+<li><a href="http://www.yiichina.com/api/IDataProvider">IDataProvider</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/IWidgetFactory">IWidgetFactory</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.actions</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CAction">CAction</a></li>
+<li><a href="http://www.yiichina.com/api/CInlineAction">CInlineAction</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CViewAction">CViewAction</a></li>
+</ul>
+</li>
+<li class="closed collapsable" style=""><div class="hitarea closed-hitarea collapsable-hitarea"></div><span class="folder">system.web.auth</span>
+<ul style="display: block; ">
+<li><a href="http://www.yiichina.com/api/CAccessControlFilter">CAccessControlFilter</a></li>
+<li><a href="http://www.yiichina.com/api/CAccessRule">CAccessRule</a></li>
+<li><a href="http://www.yiichina.com/api/CAuthAssignment">CAuthAssignment</a></li>
+<li><a href="http://www.yiichina.com/api/CAuthItem" class="">CAuthItem</a></li>
+<li style=""><a href="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/CAuthManager - 类参考手册 - Yii Framework 中文社区.htm" class="selected">CAuthManager</a></li>
+<li><a href="http://www.yiichina.com/api/CBaseUserIdentity">CBaseUserIdentity</a></li>
+<li><a href="http://www.yiichina.com/api/CDbAuthManager" class="">CDbAuthManager</a></li>
+<li><a href="http://www.yiichina.com/api/CPhpAuthManager" class="">CPhpAuthManager</a></li>
+<li><a href="http://www.yiichina.com/api/CUserIdentity">CUserIdentity</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CWebUser">CWebUser</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.filters</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CFilter">CFilter</a></li>
+<li><a href="http://www.yiichina.com/api/CFilterChain">CFilterChain</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CInlineFilter">CInlineFilter</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.form</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CForm">CForm</a></li>
+<li><a href="http://www.yiichina.com/api/CFormButtonElement">CFormButtonElement</a></li>
+<li><a href="http://www.yiichina.com/api/CFormElement">CFormElement</a></li>
+<li><a href="http://www.yiichina.com/api/CFormElementCollection">CFormElementCollection</a></li>
+<li><a href="http://www.yiichina.com/api/CFormInputElement">CFormInputElement</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CFormStringElement">CFormStringElement</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.helpers</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CGoogleApi">CGoogleApi</a></li>
+<li><a href="http://www.yiichina.com/api/CHtml">CHtml</a></li>
+<li><a href="http://www.yiichina.com/api/CJSON">CJSON</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CJavaScript">CJavaScript</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.renderers</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CPradoViewRenderer">CPradoViewRenderer</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CViewRenderer">CViewRenderer</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.services</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CSoapObjectWrapper">CSoapObjectWrapper</a></li>
+<li><a href="http://www.yiichina.com/api/CWebService">CWebService</a></li>
+<li><a href="http://www.yiichina.com/api/CWebServiceAction">CWebServiceAction</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CWsdlGenerator">CWsdlGenerator</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.widgets</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CActiveForm">CActiveForm</a></li>
+<li><a href="http://www.yiichina.com/api/CAutoComplete">CAutoComplete</a></li>
+<li><a href="http://www.yiichina.com/api/CClipWidget">CClipWidget</a></li>
+<li><a href="http://www.yiichina.com/api/CContentDecorator">CContentDecorator</a></li>
+<li><a href="http://www.yiichina.com/api/CFilterWidget">CFilterWidget</a></li>
+<li><a href="http://www.yiichina.com/api/CFlexWidget">CFlexWidget</a></li>
+<li><a href="http://www.yiichina.com/api/CHtmlPurifier">CHtmlPurifier</a></li>
+<li><a href="http://www.yiichina.com/api/CInputWidget">CInputWidget</a></li>
+<li><a href="http://www.yiichina.com/api/CMarkdown">CMarkdown</a></li>
+<li><a href="http://www.yiichina.com/api/CMaskedTextField">CMaskedTextField</a></li>
+<li><a href="http://www.yiichina.com/api/CMultiFileUpload">CMultiFileUpload</a></li>
+<li><a href="http://www.yiichina.com/api/COutputCache">COutputCache</a></li>
+<li><a href="http://www.yiichina.com/api/COutputProcessor">COutputProcessor</a></li>
+<li><a href="http://www.yiichina.com/api/CStarRating">CStarRating</a></li>
+<li><a href="http://www.yiichina.com/api/CTabView">CTabView</a></li>
+<li><a href="http://www.yiichina.com/api/CTextHighlighter">CTextHighlighter</a></li>
+<li><a href="http://www.yiichina.com/api/CTreeView">CTreeView</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CWidget">CWidget</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.widgets.captcha</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CCaptcha">CCaptcha</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CCaptchaAction">CCaptchaAction</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">system.web.widgets.pagers</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CBasePager">CBasePager</a></li>
+<li><a href="http://www.yiichina.com/api/CLinkPager">CLinkPager</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CListPager">CListPager</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">zii.behaviors</span>
+<ul style="display: none; ">
+<li class="last"><a href="http://www.yiichina.com/api/CTimestampBehavior">CTimestampBehavior</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">zii.widgets</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CBaseListView">CBaseListView</a></li>
+<li><a href="http://www.yiichina.com/api/CBreadcrumbs">CBreadcrumbs</a></li>
+<li><a href="http://www.yiichina.com/api/CDetailView">CDetailView</a></li>
+<li><a href="http://www.yiichina.com/api/CListView">CListView</a></li>
+<li><a href="http://www.yiichina.com/api/CMenu">CMenu</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CPortlet">CPortlet</a></li>
+</ul>
+</li>
+<li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">zii.widgets.grid</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CButtonColumn">CButtonColumn</a></li>
+<li><a href="http://www.yiichina.com/api/CCheckBoxColumn">CCheckBoxColumn</a></li>
+<li><a href="http://www.yiichina.com/api/CDataColumn">CDataColumn</a></li>
+<li><a href="http://www.yiichina.com/api/CGridColumn">CGridColumn</a></li>
+<li><a href="http://www.yiichina.com/api/CGridView">CGridView</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CLinkColumn">CLinkColumn</a></li>
+</ul>
+</li>
+<li class="closed expandable lastExpandable"><div class="hitarea closed-hitarea expandable-hitarea lastExpandable-hitarea"></div><span class="folder">zii.widgets.jui</span>
+<ul style="display: none; ">
+<li><a href="http://www.yiichina.com/api/CJuiAccordion">CJuiAccordion</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiAutoComplete">CJuiAutoComplete</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiButton">CJuiButton</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiDatePicker">CJuiDatePicker</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiDialog">CJuiDialog</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiDraggable">CJuiDraggable</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiDroppable">CJuiDroppable</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiInputWidget">CJuiInputWidget</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiProgressBar">CJuiProgressBar</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiResizable">CJuiResizable</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiSelectable">CJuiSelectable</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiSlider">CJuiSlider</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiSliderInput">CJuiSliderInput</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiSortable">CJuiSortable</a></li>
+<li><a href="http://www.yiichina.com/api/CJuiTabs">CJuiTabs</a></li>
+<li class="last"><a href="http://www.yiichina.com/api/CJuiWidget">CJuiWidget</a></li>
+</ul>
+</li>
+</ul>	</div>
+	<div id="content" class="right">
+		<h1>CAuthManager</h1>
+<div id="nav">
+<a href="http://www.yiichina.com/api/index">所有包</a>
+| <a href="http://www.yiichina.com/api/CAuthManager#properties">属性</a>
+| <a href="http://www.yiichina.com/api/CAuthManager#methods">方法</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name">
+	<col class="col-value">
+</colgroup>
+<tbody><tr>
+  <th>包</th>
+  <td><a href="http://www.yiichina.com/api/index#system.web.auth">system.web.auth</a></td>
+</tr>
+<tr>
+  <th>继承</th>
+  <td>abstract class CAuthManager »
+<a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a> »
+<a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>实现</th>
+  <td><a href="http://www.yiichina.com/api/IApplicationComponent">IApplicationComponent</a>, <a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr>
+  <th>子类</th>
+  <td><a href="http://www.yiichina.com/api/CDbAuthManager">CDbAuthManager</a>, <a href="http://www.yiichina.com/api/CPhpAuthManager">CPhpAuthManager</a></td>
+</tr>
+<tr>
+  <th>来自于</th>
+  <td>1.0</td>
+</tr>
+<tr>
+  <th>版本</th>
+  <td>$Id: CAuthManager.php 2799 2011-01-01 19:31:13Z qiang.xue $</td>
+</tr>
+<tr>
+  <th>源码</th>
+  <td><a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php">framework/web/auth/CAuthManager.php</a></td>
+</tr>
+</tbody></table>
+
+<div id="classDescription">
+CAuthManager是所有授权管理类的基类.
+<br><br>
+CAuthManager继承了<a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a>, 实现
+在一般授权管理器类的通用方法.
+<br><br>
+CAuthManager 是跟它的具体实现了基于角色的访问控制
+(RBAC)的子类来执行的.
+<br><br>
+这个核心思想是,权限是由<a href="http://www.yiichina.com/api/CAuthItem">授权项目</a>
+来层级组织管理的. 
+高一层的项目继承了低一层的项目权限. 而角色是最高级的授权项目, 
+它可以赋予给独立的用户. 一个用户, 它所拥有的权限, 是根据他所属于的
+角色对应的所有的授权项目.
+<br><br>
+由以下两个方面来使用授权管理器. 首先, 授权层级以及
+任务都已经确定好. CAuthManager和它的子类提供
+API去完成这些工作. 开发人员需要开发一些GUI
+来使最终用户更加易用明白这个授权机制. 其次, 开发人员应用的适当地方调用
+<a href="http://www.yiichina.com/api/IAuthManager#checkAccess">IAuthManager::checkAccess</a>
+检查当前用户是否有权限进行当前的操作.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>公共属性</h2>
+
+<p><a href="http://www.yiichina.com/api/CAuthManager#" class="toggle">隐藏继承属性</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property">
+	<col class="col-type">
+	<col class="col-description">
+	<col class="col-defined">
+</colgroup>
+<tbody><tr>
+  <th>属性</th><th>类型</th><th>描述</th><th>定义于</th>
+</tr>
+<tr class="inherited" id="authItems">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#authItems-detail">authItems</a></td>
+  <td>array</td>
+  <td>返回指定类型和用户的授权项目.</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent#behaviors-detail">behaviors</a></td>
+  <td>array</td>
+  <td>要附加到这个组件的行为.</td>
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a></td>
+</tr>
+<tr id="defaultRoles">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#defaultRoles-detail">defaultRoles</a></td>
+  <td>array</td>
+  <td>隐式赋予给所有用户的角色名字清单.</td>
+  <td>CAuthManager</td>
+</tr>
+<tr class="inherited" id="isInitialized">
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent#isInitialized-detail">isInitialized</a></td>
+  <td>boolean</td>
+  <td>检查当前应用组件是否已经初始化.</td>
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a></td>
+</tr>
+<tr id="operations">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#operations-detail">operations</a></td>
+  <td>array</td>
+  <td>返回操作.</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="roles">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#roles-detail">roles</a></td>
+  <td>array</td>
+  <td>返回角色.</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="showErrors">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#showErrors-detail">showErrors</a></td>
+  <td>boolean</td>
+  <td>为bizRules开启错误报告.</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="tasks">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#tasks-detail">tasks</a></td>
+  <td>array</td>
+  <td>返回任务.</td>
+  <td>CAuthManager</td>
+</tr>
+</tbody></table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>公共方法</h2>
+
+<p><a href="http://www.yiichina.com/api/CAuthManager#" class="toggle">隐藏继承方法</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method">
+	<col class="col-description">
+	<col class="col-defined">
+</colgroup>
+<tbody><tr>
+  <th>方法</th><th>描述</th><th>定义于</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiichina.com/api/CComponent#__call-detail">__call()</a></td>
+  <td>如果类中没有调的方法名,则调用这个方法.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiichina.com/api/CComponent#__get-detail">__get()</a></td>
+  <td>返回一个属性值,一个事件处理程序列表或一个行为名称.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiichina.com/api/CComponent#__isset-detail">__isset()</a></td>
+  <td>检查一个属性是否为null.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiichina.com/api/CComponent#__set-detail">__set()</a></td>
+  <td>设置一个组件的属性值.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiichina.com/api/CComponent#__unset-detail">__unset()</a></td>
+  <td>设置一个组件的属性为null.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="addItemChild">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#addItemChild-detail">addItemChild()</a></td>
+  <td>添加子项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiichina.com/api/CComponent#asa-detail">asa()</a></td>
+  <td>返回这个名字的行为对象.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="assign">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#assign-detail">assign()</a></td>
+  <td>将这个授权项目赋予给一个用户。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiichina.com/api/CComponent#attachBehavior-detail">attachBehavior()</a></td>
+  <td>附加一个行为到组件.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiichina.com/api/CComponent#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>附加一组行为到组件.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiichina.com/api/CComponent#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>为事件附加一个事件处理程序.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiichina.com/api/CComponent#canGetProperty-detail">canGetProperty()</a></td>
+  <td>确定属性是否可读.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiichina.com/api/CComponent#canSetProperty-detail">canSetProperty()</a></td>
+  <td>确定属性是否可写.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="checkAccess">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#checkAccess-detail">checkAccess()</a></td>
+  <td>检查指定用户的访问权限.</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="clearAll">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#clearAll-detail">clearAll()</a></td>
+  <td>移除所有授权数据。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="clearAuthAssignments">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#clearAuthAssignments-detail">clearAuthAssignments()</a></td>
+  <td>移除所有授权任务。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="createAuthItem">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#createAuthItem-detail">createAuthItem()</a></td>
+  <td>生成一个授权项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr id="createOperation">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#createOperation-detail">createOperation()</a></td>
+  <td>创建一个操作。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="createRole">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#createRole-detail">createRole()</a></td>
+  <td>创建一个角色。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="createTask">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#createTask-detail">createTask()</a></td>
+  <td>创建一个任务。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiichina.com/api/CComponent#detachBehavior-detail">detachBehavior()</a></td>
+  <td>从组件中分离一个行为.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiichina.com/api/CComponent#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>从组件中分离一组行为.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiichina.com/api/CComponent#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>分离一个存在的事件处理程序.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiichina.com/api/CComponent#disableBehavior-detail">disableBehavior()</a></td>
+  <td>禁用一个附加行为.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiichina.com/api/CComponent#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>禁用组件的所有附加行为.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiichina.com/api/CComponent#enableBehavior-detail">enableBehavior()</a></td>
+  <td>启用一个附加行为.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiichina.com/api/CComponent#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>启用组件的所有附加行为.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiichina.com/api/CComponent#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>计算一个PHP表达式或根据组件上下文执行回调.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr id="executeBizRule">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#executeBizRule-detail">executeBizRule()</a></td>
+  <td>运行指定的业务规则。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr class="inherited" id="getAuthAssignment">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#getAuthAssignment-detail">getAuthAssignment()</a></td>
+  <td>返回这个项目的分配信息。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="getAuthAssignments">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#getAuthAssignments-detail">getAuthAssignments()</a></td>
+  <td>返回指定用户的所有任务。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="getAuthItem">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#getAuthItem-detail">getAuthItem()</a></td>
+  <td>返回指定名字的授权项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="getAuthItems">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#getAuthItems-detail">getAuthItems()</a></td>
+  <td>返回指定类型和用户的授权项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiichina.com/api/CComponent#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>返回一个事件的附加事件处理程序的清单.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getIsInitialized">
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent#getIsInitialized-detail">getIsInitialized()</a></td>
+  <td>检查这个应用组件是否已经初始化。</td>
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="getItemChildren">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#getItemChildren-detail">getItemChildren()</a></td>
+  <td>返回指定项目的子项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr id="getOperations">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#getOperations-detail">getOperations()</a></td>
+  <td>返回操作。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="getRoles">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#getRoles-detail">getRoles()</a></td>
+  <td>返回角色。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr id="getTasks">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#getTasks-detail">getTasks()</a></td>
+  <td>返回任务。</td>
+  <td>CAuthManager</td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiichina.com/api/CComponent#hasEvent-detail">hasEvent()</a></td>
+  <td>确定一个事件是否被定义.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiichina.com/api/CComponent#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>检查是否命名事件附加处理程序.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasItemChild">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#hasItemChild-detail">hasItemChild()</a></td>
+  <td>确定一个子项目是否在一个父项目中。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiichina.com/api/CComponent#hasProperty-detail">hasProperty()</a></td>
+  <td>确定属性是否被定义.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent#init-detail">init()</a></td>
+  <td>初始化应用组件。</td>
+  <td><a href="http://www.yiichina.com/api/CApplicationComponent">CApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="isAssigned">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#isAssigned-detail">isAssigned()</a></td>
+  <td>确定一个项目是否已经赋予给用户。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiichina.com/api/CComponent#raiseEvent-detail">raiseEvent()</a></td>
+  <td>发起一个事件.</td>
+  <td><a href="http://www.yiichina.com/api/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="removeAuthItem">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#removeAuthItem-detail">removeAuthItem()</a></td>
+  <td>移除指定的授权项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="removeItemChild">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#removeItemChild-detail">removeItemChild()</a></td>
+  <td>从父项目中移除指定的子项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="revoke">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#revoke-detail">revoke()</a></td>
+  <td>移除用户一个授权项目。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="save">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#save-detail">save()</a></td>
+  <td>将授权数据到持久存储设备上。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="saveAuthAssignment">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#saveAuthAssignment-detail">saveAuthAssignment()</a></td>
+  <td>将改变结果保存到授权项目上。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+<tr class="inherited" id="saveAuthItem">
+  <td><a href="http://www.yiichina.com/api/IAuthManager#saveAuthItem-detail">saveAuthItem()</a></td>
+  <td>将授权项目保存到持久存储设备上。</td>
+  <td><a href="http://www.yiichina.com/api/IAuthManager">IAuthManager</a></td>
+</tr>
+</tbody></table>
+</div>
+<div class="summary docMethod">
+<h2>保护方法</h2>
+
+<p><a href="http://www.yiichina.com/api/CAuthManager#" class="toggle">隐藏继承的方法</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method">
+	<col class="col-description">
+	<col class="col-defined">
+</colgroup>
+<tbody><tr>
+  <th>方法</th><th>描述</th><th>定义于</th>
+</tr>
+<tr id="checkItemChildType">
+  <td><a href="http://www.yiichina.com/api/CAuthManager#checkItemChildType-detail">checkItemChildType()</a></td>
+  <td>检查子项目的类型以确定它已经赋予给一个父项目。</td>
+  <td>CAuthManager</td>
+</tr>
+</tbody></table>
+</div>
+<a name="events"></a>
+
+<h2>属性详细说明</h2>
+<div class="detailHeader" id="defaultRoles-detail">
+defaultRoles<span class="detailHeaderTag">
+属性
+ (自版本v1.0.3)
+</span>
+</div>
+
+<div class="signature">
+public array <b>$defaultRoles</b>;</div>
+
+<p>隐式赋予给所有用户的角色名字列表。
+这些角色不需要显式赋予给所有用户。
+当调用<a href="http://www.yiichina.com/api/CAuthManager#checkAccess">checkAccess</a>，会首先检查这些角色。
+为了能够提高程序效率，这样的角色越少越好。
+一个典型的用法是，定义一个“authenticated”角色，然后
+把它关联到一个业务逻辑规则，这个规则是用来验证当前用户的。
+然后在这个属性声明“authenticated”以便应用到
+所有的验证用户。</p>
+
+
+<div class="detailHeader" id="operations-detail">
+operations<span class="detailHeaderTag">
+属性
+ <em>只读</em> </span>
+</div>
+
+<div class="signature">
+public array <a href="http://www.yiichina.com/api/CAuthManager#getOperations"><b>getOperations</b></a>(mixed $userId=NULL)</div>
+
+<p>返回操作。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#getAuthItems">IAuthManager::getAuthItems</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="roles-detail">
+roles<span class="detailHeaderTag">
+属性
+ <em>只读</em> </span>
+</div>
+
+<div class="signature">
+public array <a href="http://www.yiichina.com/api/CAuthManager#getRoles"><b>getRoles</b></a>(mixed $userId=NULL)</div>
+
+<p>返回角色。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#getAuthItems">IAuthManager::getAuthItems</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="showErrors-detail">
+showErrors<span class="detailHeaderTag">
+属性
+ (自版本v1.1.3)
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$showErrors</b>;</div>
+
+<p>允许业务逻辑规则错误报告。</p>
+
+
+<div class="detailHeader" id="tasks-detail">
+tasks<span class="detailHeaderTag">
+属性
+ <em>只读</em> </span>
+</div>
+
+<div class="signature">
+public array <a href="http://www.yiichina.com/api/CAuthManager#getTasks"><b>getTasks</b></a>(mixed $userId=NULL)</div>
+
+<p>返回任务。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#getAuthItems">IAuthManager::getAuthItems</a>的快捷方式.</p>
+
+
+<h2>方法详细说明</h2>
+
+<div class="detailHeader" id="checkItemChildType-detail">
+checkItemChildType()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+protected void <b>checkItemChildType</b>(integer $parentType, integer $childType)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$parentType</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">父项目的类型</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$childType</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">子项目类型</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#156">framework/web/auth/CAuthManager.php#156</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">checkItemChildType</span><span style="color: #007700">(</span><span style="color: #0000BB">$parentType</span><span style="color: #007700">,</span><span style="color: #0000BB">$childType</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;</span><span style="color: #0000BB">$types</span><span style="color: #007700">=array(</span><span style="color: #DD0000">'operation'</span><span style="color: #007700">,</span><span style="color: #DD0000">'task'</span><span style="color: #007700">,</span><span style="color: #DD0000">'role'</span><span style="color: #007700">);<br>&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$parentType&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">$childType</span><span style="color: #007700">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CException</span><span style="color: #007700">(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'yii'</span><span style="color: #007700">,</span><span style="color: #DD0000">'Cannot&nbsp;add&nbsp;an&nbsp;item&nbsp;of&nbsp;type&nbsp;"{child}"&nbsp;to&nbsp;an&nbsp;item&nbsp;of&nbsp;type&nbsp;"{parent}".'</span><span style="color: #007700">,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'{child}'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$types</span><span style="color: #007700">[</span><span style="color: #0000BB">$childType</span><span style="color: #007700">],&nbsp;</span><span style="color: #DD0000">'{parent}'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$types</span><span style="color: #007700">[</span><span style="color: #0000BB">$parentType</span><span style="color: #007700">])));<br>}</span>
+</span>
+</code></div>
+</div>
+<p>检查项目类型以确定一个子项目已经赋予给一个父项目。</p>
+
+
+<div class="detailHeader" id="createOperation-detail">
+createOperation()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public <a href="http://www.yiichina.com/api/CAuthItem">CAuthItem</a> <b>createOperation</b>(string $name, string $description='', string $bizRule=NULL, mixed $data=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">项目名字</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$description</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">项目描述</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$bizRule</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">关联到这个项目的业务逻辑</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">当执行业务规则的时候所传递的额外的数据。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol"><a href="http://www.yiichina.com/api/CAuthItem">CAuthItem</a></td>
+  <td class="paramDescCol">授权项目。</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#96">framework/web/auth/CAuthManager.php#96</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">createOperation</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">=</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createAuthItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,</span><span style="color: #0000BB">CAuthItem</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_OPERATION</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">,</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>创建一个操作
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#createAuthItem">IAuthManager::createAuthItem</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="createRole-detail">
+createRole()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public <a href="http://www.yiichina.com/api/CAuthItem">CAuthItem</a> <b>createRole</b>(string $name, string $description='', string $bizRule=NULL, mixed $data=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">项目名字</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$description</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">项目描述</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$bizRule</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">关联到这个荐的业务规则</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">执行业务规则的时候所传递的额外的数据。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol"><a href="http://www.yiichina.com/api/CAuthItem">CAuthItem</a></td>
+  <td class="paramDescCol">授权项目</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#68">framework/web/auth/CAuthManager.php#68</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">createRole</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">=</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createAuthItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,</span><span style="color: #0000BB">CAuthItem</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_ROLE</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">,</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>创建一个角色。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#createAuthItem">IAuthManager::createAuthItem</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="createTask-detail">
+createTask()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public <a href="http://www.yiichina.com/api/CAuthItem">CAuthItem</a> <b>createTask</b>(string $name, string $description='', string $bizRule=NULL, mixed $data=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">项目名字</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$description</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">项目描述.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$bizRule</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">关联到这个项目的业务规则。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">执行这个业务规则时候所传递的额外的数据。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol"><a href="http://www.yiichina.com/api/CAuthItem">CAuthItem</a></td>
+  <td class="paramDescCol">验证项目。</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#82">framework/web/auth/CAuthManager.php#82</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">createTask</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">=</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createAuthItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,</span><span style="color: #0000BB">CAuthItem</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_TASK</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">,</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>创建一个任务
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#createAuthItem">IAuthManager::createAuthItem</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="executeBizRule-detail">
+executeBizRule()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public boolean <b>executeBizRule</b>(string $bizRule, array $params, mixed $data)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$bizRule</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">要执行的业务规则。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">传递给<a href="http://www.yiichina.com/api/IAuthManager#checkAccess">IAuthManager::checkAccess</a>的参数.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">关联到授权项目或者任务的额外的数据。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">这个业务规则是否返回true。
+If 即使业务规则为空，它还是会返回true。</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#145">framework/web/auth/CAuthManager.php#145</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">executeBizRule</span><span style="color: #007700">(</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">,</span><span style="color: #0000BB">$params</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">===</span><span style="color: #DD0000">''&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">===</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">||&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">showErrors&nbsp;</span><span style="color: #007700">?&nbsp;eval(</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">)!=</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">:&nbsp;@eval(</span><span style="color: #0000BB">$bizRule</span><span style="color: #007700">)!=</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>执行指定的业务规则。</p>
+
+
+<div class="detailHeader" id="getOperations-detail">
+getOperations()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public array <b>getOperations</b>(mixed $userId=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$userId</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">用户ID。如果不为null，那么只会返回赋予给这个
+用户的操作。否则返回所有的操作。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">操作 (name=&gt;CAuthItem)</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#132">framework/web/auth/CAuthManager.php#132</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getOperations</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getAuthItems</span><span style="color: #007700">(</span><span style="color: #0000BB">CAuthItem</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_OPERATION</span><span style="color: #007700">,</span><span style="color: #0000BB">$userId</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>返回操作。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#getAuthItems">IAuthManager::getAuthItems</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="getRoles-detail">
+getRoles()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public array <b>getRoles</b>(mixed $userId=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$userId</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">用户ID。如果不为null，那么只返回赋予给这个用户
+的角色。否则返回所有的角色。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">角色 (name=&gt;CAuthItem)</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#108">framework/web/auth/CAuthManager.php#108</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getRoles</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getAuthItems</span><span style="color: #007700">(</span><span style="color: #0000BB">CAuthItem</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_ROLE</span><span style="color: #007700">,</span><span style="color: #0000BB">$userId</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>返回角色。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#getAuthItems">IAuthManager::getAuthItems</a>的快捷方式.</p>
+
+
+<div class="detailHeader" id="getTasks-detail">
+getTasks()
+<span class="detailHeaderTag">
+方法
+</span>
+</div>
+
+<table class="summaryTable">
+<tbody><tr><td colspan="3">
+<div class="signature2">
+public array <b>getTasks</b>(mixed $userId=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$userId</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">用户ID。如果不为null，只返回赋予给这个用户
+任务。否则返回所有任务。</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">任务 (name=&gt;CAuthItem)</td>
+</tr>
+</tbody></table>
+
+<div class="sourceCode">
+<b>源码:</b> <a class="sourceLink" href="http://code.google.com/p/yii/source/browse/tags/1.1.8/framework/web/auth/CAuthManager.php#120">framework/web/auth/CAuthManager.php#120</a> (<b><a href="http://www.yiichina.com/api/CAuthManager#" class="show">显示</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTasks</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getAuthItems</span><span style="color: #007700">(</span><span style="color: #0000BB">CAuthItem</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_TASK</span><span style="color: #007700">,</span><span style="color: #0000BB">$userId</span><span style="color: #007700">);<br>}</span>
+</span>
+</code></div>
+</div>
+<p>返回任务。
+这个方法是<a href="http://www.yiichina.com/api/IAuthManager#getAuthItems">IAuthManager::getAuthItems</a>的快捷方式.</p>	</div>
+</div>
+<script type="text/javascript"> 
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/隐藏/,'显示'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/显示/,'隐藏'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/显示/,'隐藏'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/隐藏/,'显示'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>	</div><!-- content -->
+	<div id="footer">
+			<a href="http://www.yiichina.com/tos/">服务条款</a> |
+			<a href="http://www.yiichina.com/license/">许可</a> |
+			<a href="http://www.yiichina.com/contact/">联系我们</a> |
+			<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/stat.php"></script><script src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/cnzz_core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=2069540" target="_blank" title="站长统计">站长统计</a><br>
+			Copyright © 2008-2012 by <a href="http://www.yiichina.org/">Yii China</a>. All Rights Reserved.<br>
+			Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a> 1.1.9.
+			<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备09104811号</a>
+	</div><!-- footer -->
+</div><!-- container -->
+<!-- dialog -->
+<script type="text/javascript" src="./CAuthManager - 类参考手册 - Yii Framework 中文社区_files/jquery-ui.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery("#yw0").treeview({'animated':'fast','persist':'location'});
+jQuery('#dialog').dialog({'autoOpen':false,'modal':true,'resizable':false});
+});
+/*]]>*/
+</script>
+
+<div style="display: none; z-index: 1000; outline: 0px; " class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialog"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-dialog">&nbsp;</span><a href="http://www.yiichina.com/api/CAuthManager#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialog" style="display: block; " class="ui-dialog-content ui-widget-content">
+</div></div></body></html>
